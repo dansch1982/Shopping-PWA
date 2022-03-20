@@ -4,6 +4,7 @@
     "short_name": "Shopping",
     "lang": "en-US",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#F5F9FF",
     "theme_color": "#6495ed",
