@@ -3,9 +3,9 @@
     "name": "Shopping",
     "short_name": "Shopping",
     "lang": "en-US",
-    "start_url": "index.html",
+    "start_url": "/",
     "display": "standalone",
-    "background_color": "#6495ed",
+    "background_color": "#F5F9FF",
     "theme_color": "#6495ed",
     "icons": [
       {
