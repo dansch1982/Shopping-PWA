@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+body .container,
+html .container {
+  display: grid;
+  grid-template-rows: -webkit-max-content auto -webkit-max-content;
+  grid-template-rows: max-content auto max-content;
+  width: 100%;
+  height: 100%;
+}
+body .container header,
+html .container header {
+  width: 100%;
+  height: 100%;
+  background-color: #6495ed;
+}
+body .container header h1,
+html .container header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-align: center;
+  padding: 0.5rem;
+}
+body .container main,
+html .container main {
+  color: black;
+  background-color: #F5F9FF;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body .container main .itemList,
+html .container main .itemList {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container main .itemList section,
+html .container main .itemList section {
+  display: table;
+  table-layout: fixed;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #E6F4F1;
+  max-width: 800px;
+  width: 100%;
+  padding: 0.75rem;
+  height: 4.5rem;
+}
+body .container main .itemList section [type=checkbox],
+html .container main .itemList section [type=checkbox] {
+  opacity: 0;
+  width: 0;
+}
+body .container main .itemList section [type=checkbox] + label,
+html .container main .itemList section [type=checkbox] + label {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  position: relative;
+  padding-left: 3.5rem;
+  cursor: pointer;
+}
+body .container main .itemList section [type=checkbox] + label::before,
+html .container main .itemList section [type=checkbox] + label::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  outline: 3px solid #A6ABBD;
+  background-color: #F5F9FF;
+}
+body .container main .itemList section [type=checkbox]:checked + label::before,
+html .container main .itemList section [type=checkbox]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  outline: 3px solid #2BC194;
+  background-color: #F5F9FF;
+}
+body .container main .itemList section [type=checkbox]:checked + label::after,
+html .container main .itemList section [type=checkbox]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  outline: 3px solid #2BC194;
+  background-color: #F5F9FF;
+  outline: none;
+  background-image: url("../images/checkmark.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+body .container main .itemList section [type=checkbox]:not(:checked) + label::after,
+html .container main .itemList section [type=checkbox]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  outline: 3px solid #2BC194;
+  background-color: #F5F9FF;
+  outline: none;
+  background-image: url("../images/checkmark.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(0);
+  opacity: 0;
+}
+body .container footer,
+html .container footer {
+  width: 100%;
+  height: 100%;
+  background-color: #6495ed;
+}/*# sourceMappingURL=style.css.map */
