@@ -5,7 +5,7 @@ importScripts(
 const cacheName = 'Shopping';
 const filesToCache = [
   '/',
-  /* '/index.html',
+/*   '/index.html',
   '/css/style.css',
   '/js/index.js' */
 ];
@@ -20,13 +20,13 @@ self.addEventListener('install', event => {
 });
 
 /* Serve cached content when offline */
-self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request));
-});
 /* self.addEventListener('fetch', event => {
+  event.respondWith(fetch(event.request));
+}); */
+self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
       return response || fetch(event.request);
     })
   );
-}); */
+});
