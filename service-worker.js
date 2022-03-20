@@ -2,12 +2,12 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js'
 );
 
-const cacheName = 'shopping';
+const cacheName = 'Shopping';
 const filesToCache = [
   '/',
-  '/index.html',
+  /* '/index.html',
   '/css/style.css',
-  '/js/index.js'
+  '/js/index.js' */
 ];
 
 /* Start the service worker and cache all of the app's content */
