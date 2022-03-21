@@ -53,3 +53,9 @@ items.forEach(item => {
 
     itemList.appendChild(section)
 })
+
+const addItemToggle = document.getElementById('addItemToggle')
+addItemToggle.addEventListener('click', () => {
+    const addItemSection = document.getElementById('addItemSection')
+    addItemSection.classList.toggle('displayNone')
+})
