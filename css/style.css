@@ -168,20 +168,20 @@ body .container footer section article input,
 html .container footer section article input {
   padding: 0.5rem;
   font-size: 1.25rem;
-  border: 3px solid #F5F9FF;
-  background-color: transparent;
-  color: white;
+  background-color: #F5F9FF;
+  color: black;
   outline: none;
+  border: none;
 }
 body .container footer section article input::-moz-placeholder, html .container footer section article input::-moz-placeholder {
-  color: white;
+  color: black;
 }
 body .container footer section article input:-ms-input-placeholder, html .container footer section article input:-ms-input-placeholder {
-  color: white;
+  color: black;
 }
 body .container footer section article input::placeholder,
 html .container footer section article input::placeholder {
-  color: white;
+  color: black;
 }
 body .container footer section article [type=text],
 html .container footer section article [type=text] {
