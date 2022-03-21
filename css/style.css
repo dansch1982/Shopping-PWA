@@ -32,7 +32,7 @@ html .container header h1 {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  color: whitesmoke;
+  color: #F5F9FF;
   text-align: center;
   padding: 0.5rem;
 }
@@ -146,8 +146,8 @@ html .container footer {
   width: 100%;
   height: 100%;
   background-color: #6495ed;
-  padding: 0.5rem;
-  gap: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
 }
 body .container footer section,
 html .container footer section {
@@ -156,7 +156,6 @@ html .container footer section {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem;
 }
 body .container footer section article,
 html .container footer section article {
@@ -169,7 +168,7 @@ body .container footer section article input,
 html .container footer section article input {
   padding: 0.5rem;
   font-size: 1.25rem;
-  border: 3px solid #2BC194;
+  border: 3px solid #F5F9FF;
   background-color: transparent;
   color: white;
   outline: none;
@@ -211,16 +210,25 @@ html .container footer section button {
 }
 body .container footer > button,
 html .container footer > button {
+  position: relative;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   border: 3px solid black;
   border: none;
   outline: none;
-  background-image: url("../icon.png");
-  background-size: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #F5F9FF;
+}
+body .container footer > button svg,
+html .container footer > button svg {
+  position: absolute;
+  top: 4%;
+  left: -6%;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7, 0.7);
+  fill: #6495ed;
+  stroke: #6495ed;
 }
 
 .displayNone {
