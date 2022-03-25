@@ -9,6 +9,9 @@ class App {
         this.loadItems()
     }
     loadItems() {
+        if (!localStorage.getItem('items')) {
+            localStorage.setItem('items', JSON.stringify([]))
+        }
         JSON.parse(localStorage.getItem('items')).forEach((item,index) => {
             this.items[index] = {
                 "name" : item.name,
@@ -17,9 +20,9 @@ class App {
         })
     }
     renderItems() {
-        this.items.forEach(item => {
-            this.renderItem(item)
-        })
+            this.items.forEach(item => {
+                this.renderItem(item)
+            })
     }
     renderItem(item) {
         const itemList = document.querySelector('.itemList');
