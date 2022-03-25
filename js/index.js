@@ -96,6 +96,7 @@ addItem.addEventListener('click', () => {
     app.addItem(object)
     itemName.value = ""
     itemAmount.value = 1
+    itemName.focus()
 })
 
 const itemName = document.getElementById('itemName')
@@ -105,7 +106,6 @@ itemName.addEventListener("keydown", (event) => {
 const itemAmount = document.getElementById('itemAmount')
 itemAmount.addEventListener("keydown", (event) => {
     if (event.key === "Enter") addItem.click()
-    itemName.focus()
 })
 
 
